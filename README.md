@@ -25,8 +25,7 @@ Also, be sure to have `git` available in your PATH, `npm` might need it (You can
 
 If the installation was successful, you should be able to run the following command.
 
-    $ node --version    
-
+    $ node --version
     $ npm --version
 
 ## Install
@@ -38,4 +37,5 @@ If the installation was successful, you should be able to run the following comm
 ## Running the project
 
     $ npm start
+    $ open a browser on http://localhost:5000/
 
