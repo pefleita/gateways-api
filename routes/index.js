@@ -9,7 +9,9 @@ module.exports = function(){
     /**
      * Index Route
      */
-    router.get('/', 'Welcome to Gateways API');
+    router.get('/', function(req, res){
+        res.status(200).send("Gateways API is running");
+    });
 
     /**
      * Gateways Routes
