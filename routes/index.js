@@ -7,6 +7,11 @@ const peripheralsController = require('../controllers/peripheralsController');
 
 module.exports = function(){
     /**
+     * Index Route
+     */
+    router.get('/', 'Welcome to Gateways API');
+
+    /**
      * Gateways Routes
      */
     //get: /gateways
