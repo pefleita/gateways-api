@@ -45,7 +45,8 @@ exports.add = async(req, res) => {
 exports.show = async(req, res, next) => {
     try {
         const gateway = await Gateways.findById(req.params.id)
-         .populate({path: 'peripherals'});
+         .populate({path: 'peripherals'})
+         .populate({path: 'peripherals_count'});
 
         if(!gateway){
             res.status(404).json({
